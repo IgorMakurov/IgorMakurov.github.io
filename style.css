@@ -46,7 +46,7 @@ main {
 
 
 .hero {
-    flex-basis: 100%;
+    flex-basis: 100%; /* Занимает всю ширину */
     text-align: center;
     padding: 2rem 0;
     color: #4dff91;
@@ -58,7 +58,7 @@ main {
 }
 
 .content {
-    flex-basis: 70%; /* Занимает 70% ширины */
+    flex-basis: 70%;
     padding-right: 20px;
 }
 
@@ -97,7 +97,7 @@ main {
 }
 
 aside {
-    flex-basis: 30%; /* Занимает 30% ширины */
+    flex-basis: 30%;
     background-color: #222;
     padding: 20px;
     border-radius: 5px;
@@ -166,9 +166,6 @@ footer {
 
 /* Медиа запрос для больших экранов */
 @media (min-width: 769px) {
-   main {
-        flex-wrap: nowrap;
-        }
   .content {
       flex-basis: 70%;
      }
