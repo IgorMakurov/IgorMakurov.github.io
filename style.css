@@ -1,0 +1,185 @@
+body {
+    font-family: 'Press Start 2P', cursive; /* Пиксельный шрифт */
+    background-color: #1a1a1a; /* Темный фон */
+    color: #eee;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #222;
+    border-bottom: 3px solid #4dff91; /* Неоновая полоска */
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Тень */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 1.5rem;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+nav ul li:hover {
+    border-bottom: 2px solid #4dff91;
+}
+
+nav a {
+    color: #4dff91;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background: linear-gradient(135deg, #222, #1a1a1a); /* Градиент */
+}
+
+
+.hero {
+    flex-basis: 100%;
+    text-align: center;
+    padding: 2rem 0;
+    color: #4dff91;
+    text-shadow: 0 0 10px #4dff91; /* Неоновый эффект */
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.content {
+    flex-basis: 70%;
+    padding-right: 20px;
+}
+
+.content article {
+    margin-bottom: 20px;
+    background-color: #222;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content article:hover {
+    transform: translateY(-5px);
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.content h2 {
+    color: #4dff91;
+    border-bottom: 1px solid #4dff91;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.content p {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #ddd;
+}
+
+aside {
+    flex-basis: 30%;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+aside:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+aside h3 {
+  color: #4dff91;
+  border-bottom: 1px solid #4dff91;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+aside a:hover {
+    color: #4dff91;
+}
+
+footer {
+    background-color: #222;
+    color: #ddd;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #4dff91;
+}
+
+/* Медиазапросы для разных размеров экрана */
+@media (max-width: 768px) {
+    .content {
+        flex-basis: 100%;
+        padding-right: 0;
+    }
+
+    aside {
+        flex-basis: 100%;
+        padding-top: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .content,
+    aside {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+    nav a {
+        font-size: 1.1rem;
+    }
+    .content p {
+      font-size: 0.9rem;
+    }
+}
