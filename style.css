@@ -1,19 +1,22 @@
+/* Общие стили */
 body {
     font-family: 'Press Start 2P', cursive; /* Пиксельный шрифт */
-    background-color: #1a1a1a; /* Темный фон */
-    color: #eee;
+    background-color: #1a1a1a; /* Фон */
+    color: #eee; /* Цвет текста серый */
     margin: 0;
     padding: 0;
 }
 
+/* Стили для шапки */
 header {
-    background-color: #222;
-    border-bottom: 3px solid #4dff91; /* Неоновая полоска */
+    background-color: #222; /* Фон */
+    border-bottom: 3px solid #4dff91; /* Полоска снизу */
     padding: 1rem 0;
-    text-align: center;
+    text-align: center; /* Выравнивание текста */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Тень */
 }
 
+/* Меню */
 nav ul {
     list-style: none;
     padding: 0;
@@ -23,62 +26,64 @@ nav ul {
 nav ul li {
     display: inline-block;
     margin: 0 1.5rem;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent; /* Прозрачная граница снизу */
+    transition: border-bottom 0.3s ease; /* Анимация при наведении */
 }
 
 nav ul li:hover {
-    border-bottom: 2px solid #4dff91;
+    border-bottom: 2px solid #4dff91; /* Зелёная граница при наведении */
 }
 
 nav a {
-    color: #4dff91;
-    text-decoration: none;
-    font-size: 1.2rem;
+    color: #4dff91; /* Цвет текста ссылок */
+    text-decoration: none; /* Убирает подчеркивание */
+    font-size: 1.2rem; /* Размер шрифта */
 }
 
+/* Стили для main */
 main {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
-    background: linear-gradient(135deg, #222, #1a1a1a);
+    background: linear-gradient(135deg, #222, #1a1a1a); /* Градиентный фон */
 }
 
-
+/* Стили для заголовка */
 .hero {
     flex-basis: 100%;
     text-align: center;
-    padding: 2rem 0;
-    color: #4dff91;
-    text-shadow: 0 0 10px #4dff91; /* Неоновый эффект */
+    padding: 2rem 0; /*
+    color: #4dff91; /* Цвет текста зелёный*/
+    text-shadow: 0 0 10px #4dff91; /* Неоновый эффект для текста */
 }
 
 .hero h1 {
     font-size: 2.5rem;
 }
 
+/* Стили для статей */
 .content {
-    flex-basis: 70%; /* Занимает 70% ширины */
+    flex-basis: 70%;
     padding-right: 20px;
 }
 
 .content article {
     margin-bottom: 20px;
-    background-color: #222;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #222; /* Фон */
+    padding: 15px; 
+    border-radius: 5px; /* Скругляет углы */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Тень */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Анимация при наведении */
 }
 
 .content article:hover {
-    transform: translateY(-5px);
-     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    transform: translateY(-5px); /* Блок смещается вверх при наведении */
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Тень при наведении */
 }
 
 .content h2 {
-    color: #4dff91;
-    border-bottom: 1px solid #4dff91;
+    color: #4dff91; /* Зеленый цвет для текста заголовков */
+    border-bottom: 1px solid #4dff91; /* Зеленая полоска снизу */
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
@@ -86,33 +91,34 @@ main {
 .content img {
     max-width: 100%;
     height: auto;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px; /* Скругляет углы */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Тень */
 }
 
 .content p {
-  font-size: 1rem;
-  line-height: 1.4;
-  color: #ddd;
+  font-size: 1rem; /* Размер шрифта */
+  line-height: 1.4; /* Межстрочный интервал */
+  color: #ddd; /* Цвет текста серый */
 }
 
+/* Стили для боковой панели */
 aside {
-    flex-basis: 30%; /* Занимает 30% ширины */
-    background-color: #222;
+    flex-basis: 30%;
+    background-color: #222; /* Фон */
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 5px; /* Скругляет углы */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Тень */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Анимация при наведении */
 }
 
 aside:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    transform: translateY(-5px); /* Блок смещается вверх при наведении */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Тень при наведении */
 }
 
 aside h3 {
-  color: #4dff91;
-  border-bottom: 1px solid #4dff91;
+  color: #4dff91; /* Зеленый цвет текста для заголовков */
+  border-bottom: 1px solid #4dff91; /* Зеленая полоска снизу */
   padding-bottom: 5px;
   margin-bottom: 10px;
 }
@@ -127,27 +133,29 @@ aside ul li {
 }
 
 aside a {
-    color: #ddd;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    color: #ddd; /* Серый цвет текста для ссылок */
+    text-decoration: none; /* Убирает подчеркивание */
+    transition: color 0.3s ease; /* Анимация при наведении */
 }
 
 aside a:hover {
-    color: #4dff91;
+    color: #4dff91; /* Зелёный цвет текста при наведении */
 }
 
+/* Стили для футера */
 footer {
-    background-color: #222;
-    color: #ddd;
-    text-align: center;
+    background-color: #222; /* Фон */
+    color: #ddd; /* Цвет текста серый*/
+    text-align: center; /* Выравнивает текст */
     padding: 1rem 0;
-    position: relative;
+    position: relative; /* Позиция футера */
     bottom: 0;
     width: 100%;
-    border-top: 2px solid #4dff91;
+    border-top: 2px solid #4dff91; /* Зеленая полоска сверху */
 }
 
-/* Медиазапросы для разных размеров экрана */
+/* Адаптация под разные экраны */
+
 @media (max-width: 768px) {
     .content {
         flex-basis: 100%;
@@ -159,15 +167,14 @@ footer {
         padding-top: 20px;
     }
       nav ul li {
-        display: block;
+        display: block; /* Располагает элементы списка в столбик */
         margin: 0.5rem 0;
     }
 }
 
-/* Медиа запрос для больших экранов */
 @media (min-width: 769px) {
-   main {
-        flex-wrap: nowrap;
+    main {
+        flex-wrap: nowrap; /* Запрещает перенос на следующую строку */
         }
   .content {
       flex-basis: 70%;
@@ -177,17 +184,16 @@ footer {
       }
 }
 
-/* Медиазапрос для экранов 1920x1080 и больше */
 @media (min-width: 1920px) {
     main {
       flex-direction: row; /* Располагает элементы в строку */
     }
     .content {
-      flex-basis: 70%; /* Занимает 70% ширины */
-      order: 1;
+      flex-basis: 70%;
+      order: 1; /* Определяет порядок контента в строке flex */
     }
   aside {
-      flex-basis: 30%; /* Занимает 30% ширины */
-        order: 2;
+      flex-basis: 30%;
+        order: 2; /* Определяет порядок боковой панели в строке flex */
     }
 }
